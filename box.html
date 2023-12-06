@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+
+        }
+
+        .box1 {
+            width: 200px;
+            height: 400px;
+            background-color: pink;
+            margin: 20px;
+            padding: 50px;
+        }
+
+        .sticky {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: sticky;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+        }
+
+        .relative {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            top: 30px;
+            left: 20px;
+            margin: 40px;
+            padding: 30px;
+            text-align: center;
+            z-index: 5;
+        }
+
+        .absolute {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            position: absolute;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">content</div>
+    <div class="box">Turkmenistan</div>
+    <div class="box" style="border: 2px red dashed;">CIS</div>
+    <div class="box"> Total Box</div>
+    <div class="relative">BCIS
+    <p class="absolute">CVK</p></div>
+    
+    <div class="box1" style="position: fixed;top: 0px;right: 0px;">There are many subspecies within the brown bear
+        species, including the Atlas bear and the Himalayan brown bear</div>
+    <div class="sticky">AES</div>
+
+    <div class="box">box 1</div>
+    <div class="box" style="z-index: 1;">box 2</div>
+    <div class="box">box 3</div>
+
+
+
+
+</body>
+
+</html>
