@@ -1,0 +1,16 @@
+.box {
+    background-color: blue;
+    width: 900px;
+    height: 700px;
+    margin-top: 60px;
+
+    margin-left: 110px;
+
+    box-shadow: 5px 5px grey;
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
