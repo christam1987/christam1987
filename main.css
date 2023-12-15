@@ -1,0 +1,39 @@
+.box {
+    background-color: blue;
+    width: 900px;
+    height: 700px;
+    margin-top: 60px;
+    margin-left: 110px;
+    box-shadow: 5px 5px grey;
+}
+
+.img {
+    width: 500px;
+    height: 720px;
+    position: relative;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Điều chỉnh chiều cao của container */
+  }
+  
+  .image-container {
+    position: relative;
+    left: -10px;
+    width: 500px;
+    height: 720px;
+  }
+  
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white; 
+}
+.btn btn-secondary {width: 100px;height: 50px;}
