@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoint</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../christam1987/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .box {
+            background-color: black;
+            width: 200px;
+            height: 200px;
+        }
+
+        @media (min-width : 576px) {
+            .box {
+                background-color: yellow;
+                width: 300px;
+            }
+
+        }
+
+        @media (min-width : 768px) {
+            .box {
+                background-color: pink;
+                width: 250px;
+
+            }
+
+
+            .title {
+                text-align: center;
+                padding: 32px;
+            }
+        }
+
+        .light-grey {
+            color: black;
+            background-color: rgb(221, 213, 213);
+        }
+
+        .tag {
+            background-color: black;
+            color: white;
+            padding-left: 8px;
+            padding-right: 8px;
+            display: inline-block;
+            text-align: right;
+        }
+
+
+
+
+        .content {
+            border: grey;
+        }
+
+        .Popular {
+            margin: 16px;
+            !important
+        }
+    </style>
+</head>
+
+<body class="light-grey">
+    <header class="title">
+        <h1>MY BLOG</h1>
+        <P>Welcome to the blog of
+            <span class="tag">unknown</span>
+        </P>
+    </header>
+
+    <section class="content">
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-8 w-100">
+                    <img src="https://vector6.com/wp-content/uploads/2022/03/pikvn002694-tranh-phong-canh-tuyen-tap-dep-file-psd.jpg"
+                        width=800px height=300px alt="demo">
+                    <h1>TITLE HEADING</h1>
+                    <P>Title description, <span style="opacity: 0.60;"></span>April 7, 2014</P>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                        euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                        ultricies mi non congue ullam corper. Praesent tincidunt sed
+                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+                        non fringilla.</p>
+                    <p><button type="button" class="btn btn-outline-secondary"><strong>READ MORE >></strong></button>
+                        <span style="float: right; padding: 12px 24px;"><strong>Comments</strong>
+                            <span class="tag">0</span></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <img src="https://vector6.com/wp-content/uploads/2022/03/pikvn002754-tranh-phong-canh-tuyen-tap-dep-file-psd.jpg"
+                    width=390px height=240px alt="demo">
+                <h2>My Name</h2>
+                <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of
+                    lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+            </div>
+        </div>
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-8 w-100">
+                    <img src="https://vector6.com/wp-content/uploads/2022/03/pikvn002753-tranh-phong-canh-tuyen-tap-dep-file-psd.jpg"
+                        width=800px height=300px alt="demo">
+                    <h1>BLOG ENTRY</h1>
+                    <P>Title description, <span style="opacity: 0.60;"></span>April 2, 2014</P>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                        euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                        ultricies mi non congue ullam corper. Praesent tincidunt sed
+                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+                        non fringilla.</p>
+                    <p><button type="button" class="btn btn-outline-secondary">READ MORE >></button>
+                        <span style="float: right; padding: 12px 24px;"><strong>Comments</strong>
+                            <span class="tag">0</span></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="Popular">
+                    <div class=""></div>
+                    <h4>Popular Posts</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
