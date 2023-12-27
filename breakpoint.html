@@ -58,17 +58,42 @@
 
 
         .content {
-            border: grey;
+            border: pink box-shadow: grey;
         }
 
         .Popular {
             margin: 16px;
-            !important
+            padding: 8px 16px;
+            border: solid 1px black;
+            background-color: grey;
+
+
+        }
+
+        .border {
+            border: solid 1px #ddd;
+            background-color: white;
+            padding: 8px 16px;
+
+        }
+
+        .text {
+            color: lightblue;
+            background-color: #f1f1f1;
+        }
+
+        .mytext {
+            color: black;
+            background-color: rgb(185, 183, 183);
+            margin: 8px;
+            padding: 3px;
+            text-align: center;
         }
     </style>
 </head>
 
-<body class="light-grey">
+<body>
+    <div class="light-grey">
     <header class="title">
         <h1>MY BLOG</h1>
         <P>Welcome to the blog of
@@ -77,20 +102,20 @@
     </header>
 
     <section class="content">
-        <div class="container d-flex">
+        <div class="container d-flex px-0 ;">
             <div class="row">
-                <div class="col-8 w-100">
+                <div class="col-8 w-100 box-shadow: 2px 4px 5px black;">
                     <img src="https://vector6.com/wp-content/uploads/2022/03/pikvn002694-tranh-phong-canh-tuyen-tap-dep-file-psd.jpg"
                         width=800px height=300px alt="demo">
                     <h1>TITLE HEADING</h1>
-                    <P>Title description, <span style="opacity: 0.60;"></span>April 7, 2014</P>
+                    <P>Title description, <span style="opacity: 0.6;">April 7, 2014</span></P>
                     <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
                         euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
                         ultricies mi non congue ullam corper. Praesent tincidunt sed
                         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
                         non fringilla.</p>
                     <p><button type="button" class="btn btn-outline-secondary"><strong>READ MORE >></strong></button>
-                        <span style="float: right; padding: 12px 24px;"><strong>Comments</strong>
+                        <span style="float:right; padding: 12px 24px;"><strong>Comments</strong>
                             <span class="tag">0</span></span>
                     </p>
                 </div>
@@ -110,27 +135,62 @@
                     <img src="https://vector6.com/wp-content/uploads/2022/03/pikvn002753-tranh-phong-canh-tuyen-tap-dep-file-psd.jpg"
                         width=800px height=300px alt="demo">
                     <h1>BLOG ENTRY</h1>
-                    <P>Title description, <span style="opacity: 0.60;"></span>April 2, 2014</P>
-                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                        euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
-                        ultricies mi non congue ullam corper. Praesent tincidunt sed
-                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
-                        non fringilla.</p>
-                    <p><button type="button" class="btn btn-outline-secondary">READ MORE >></button>
-                        <span style="float: right; padding: 12px 24px;"><strong>Comments</strong>
-                            <span class="tag">0</span></span>
-                    </p>
+                    <P>Title description, <span style="opacity: 0.60;">April 2, 2014</span< /P>
+                            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
+                                lorem
+                                euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                                sed
+                                ultricies mi non congue ullam corper. Praesent tincidunt sed
+                                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                                gravida diam
+                                non fringilla.</p>
+                            <p><button type="button" class="btn btn-outline-secondary">READ MORE >></button>
+                                <span style="float: right; padding: 12px 24px;"><strong>Comments</strong>
+                                    <span class="tag">2</span></span>
+                            </p>
                 </div>
             </div>
+
             <div class="col-4">
                 <div class="Popular">
-                    <div class=""></div>
                     <h4>Popular Posts</h4>
                 </div>
+                <ul>
+                    <li class="border"><img src="https://www.w3schools.com/w3images/workshop.jpg" width=50px alt="demo">
+                        <span style="font-size: 18px;">Lorem</span><br>
+                        <span>Sed mattis nuric</span>
+                    </li>
+                    <li class="border">Ipsum</li>
+                    <li class="border">Dorum</li>
+                    <li class="border">Mingsum</li>
+                </ul>
 
+
+                <div class="Popular">Tags</div>
+                <p>
+                    <span class="tag">Travel</span>
+                    <span class="mytext">New York</span>
+                    <span class="mytext">London</span>
+                    <span class="mytext">London</span>
+                    <span class="mytext">London</span>
+                    <span class="mytext">London</span>
+                    <span class="mytext">London</span>
+                    <span class="mytext">London</span>
+                    <span class="mytext">London</span>
+
+
+                </p>
             </div>
+
         </div>
     </section>
+    <footer style="color: #fff; background-color: #616161;padding: 25px;margin: 16px;">
+        <button
+            style="cursor:not-allowed; background-color: black; color: white; opacity: 0.3; padding: 12px 24px;margin-top: 16px;">Previous</button>
+        <button style="background-color: black; color: white; padding: 12px 24px;">Next>></button>
+        <p style="padding-top: 32px; padding-bottom: 10px; padding-left: 5px;">Powered by <a
+                href="https://cis.edu.vn/en">w3.css</a></p>
+    </footer>
 
 
 </body>
