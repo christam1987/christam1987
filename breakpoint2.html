@@ -35,11 +35,9 @@
             position: absolute;
             font-family: sans-serif;
             font-weight: 400;
-            margin-top: 550px;
+            margin-top: 750px;
             text-align: center;
             color: white;
-
-
         }
     </style>
 </head>
@@ -47,8 +45,8 @@
 <body>
     <header>
         <div class="top">
-            <a href="#" class="top">HOME</a>
-            <a href="#" target="THE BAND" class="top">BAND</a>
+            <a>HOME</a>
+            <a href="#band" class="top">BAND</a>
             <a href="#" class="top">TOUR</a>
             <a href="#" class="top">CONTACT</a>
             <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +64,7 @@
             <img src="https://www.w3schools.com/w3images/la.jpg" width="100%" height="auto" alt="Los Angeles">
             <div class="title">
                 <h3>Los Angeles</h3>
-                <p>We had the best time playing at Venice Beach!</p>
+                <b>We had the best time playing at Venice Beach!</b>
             </div>
         </div>
 
@@ -74,12 +72,10 @@
 
     <section>
 
-
-        <div class="text-center mt-5">
-            <h2>THE BAND</h2>
-        </div>
+        <div class="row d-flex justify-content-center m-5">
+            <h2 class="text-center">THE BAND</h2>
         <div class=" text-center opacity-50 p-2">We love music</div>
-        <p class="text-center p-2">We have created a fictional band website. Lorem ipsum dolor sit amet,
+        <p class="d-flex">We have created a fictional band website. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -87,18 +83,38 @@
             deserunt mollit anim id est laborum consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="row">
-            <div class="d-flex justify-content-center p-5">
-                <p>Name</p>
-                <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="200px" height="200px" alt=" Random Name">
-                <p>Name</p>
-                <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="200px" height="200px" alt=" Random Name">
-                <p>Name</p>
-                <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="200px" height="200px" alt=" Random Name">
+        
+            <div class="d-flex justify-content-center">
+                <div>
+                    <p class="text-center">Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="150px" height="150px"
+                        alt=" Random Name">
+                </div>
+                <div class="mx-5">
+                    <p class="text-center">Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="150px" height="150px"
+                        alt=" Random Name">
+                </div>
+                <div>
+                    <p class="text-center">Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="150px" height="150px"
+                        alt=" Random Name">
+                </div>
             </div>
+        </div>
+        <div class="text-center bg-black text-white p-5 m-5">
+            <h4>TOUR DATES</h4>
+            <i class="opacity-50">Remember to book your tickets!</i>
+            <div class="bg-white border-bottom">
+                <p class="text-black">September<span class="bg-danger text-white m-1">Sold out</span></p>
+                <p class="text-black">September<span class="bg-danger text-white m-1">Sold out</span></p>
+                <p class="text-black">September<span class="bg-danger text-white m-1">Sold out</span></p>
+            </div>
+
         </div>
 
     </section>
+    <p>September<span class="bg-red m-2 ">Sold out</span></p>
 
 
 
