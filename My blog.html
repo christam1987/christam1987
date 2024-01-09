@@ -23,8 +23,24 @@
         li,
         ol {
             list-style: none;
-            /* padding: 0px;
-            margin: 0px; */
+
+        }
+
+        @media (min-width : 576px) {
+            .hide-text {
+                display: block !important
+
+            }
+        }
+
+        .hide-text {
+            display: none;
+
+        }
+
+        .no-decoration {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -38,133 +54,148 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-8 col-lg-8 col-md-12">
-                <section class="shadow mb-5 bg-white">
-                    <img src="https://www.w3schools.com/w3images/woods.jpg" width="100%" alt="demo">
-                    <div class="p-3">
-                        <h1>TITLE HEADING</h1>
-                        <P>Title description, <span style="opacity: 0.6;">April 7, 2014</span></P>
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
-                            lorem
-                            euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus
-                            sed
-                            ultricies mi non congue ullam corper. Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
-                            gravida
-                            diam
-                            non fringilla.</p>
-                        <button type="button" class="btn btn-outline-secondary p-2"><strong>READ MORE
-                                >></strong></button>
-                        <span style="float:right; padding: 12px 24px;"><strong>Comments</strong>
-                            <span class="bg-black text-white p-2">0</span></span>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12">
+                        <section class="shadow mb-5 bg-white">
+                            <img src="https://www.w3schools.com/w3images/woods.jpg" width="100%" alt="demo">
+                            <div class="p-3">
+                                <h1>TITLE HEADING</h1>
+                                <P>Title description, <span style="opacity: 0.6;">April 7, 2014</span></P>
+                                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc
+                                    id
+                                    lorem
+                                    euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
+                                    Phasellus
+                                    sed
+                                    ultricies mi non congue ullam corper. Praesent tincidunt sed
+                                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                                    gravida
+                                    diam
+                                    non fringilla.</p>
+                                <button type="button" class="btn btn-outline-secondary p-2"><strong>READ MORE
+                                        >></strong></button>
+                                <span class="hide-text"
+                                    style="float:right; padding: 12px 24px;"><strong>Comments</strong>
+                                    <span class="bg-black text-white p-2">0</span></span>
+                            </div>
+                        </section>
                     </div>
-                </section>
+                    <div class="col-12 col-lg-12 col-md-12">
+                        <section class="shadow mb-5 bg-white">
+                            <img src="https://www.w3schools.com/w3images/bridge.jpg" width="100%" alt="demo">
+                            <div class="p-3">
+                                <h1>BLOG ENTRY</h1>
+                                <P>Title description, <span style="opacity: 0.60;">April 2, 2014</span></p>
+                                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis
+                                    nunc
+                                    id
+                                    lorem
+                                    euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
+                                    Phasellus
+                                    sed
+                                    ultricies mi non congue ullam corper. Praesent tincidunt sed
+                                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                                    congue
+                                    gravida diam
+                                    non fringilla.</p>
+                                <button type="button" class="btn btn-outline-secondary p-2"><strong>READ MORE
+                                        >></strong></button>
+                                <span class="hide-text"
+                                    style="float: right; padding: 12px 24px;"><strong>Comments</strong>
+                                    <span class="bg-black text-white p-2">2</span></span>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-4 col-lg-4 col-md-12">
-                <section class="shadow mb-5 bg-white">
-                    <img src="https://www.w3schools.com/w3images/avatar_g.jpg" width="100%" alt="demo">
-                    <div class="bg-white p-2">
-                        <h2>My Name</h2>
-                        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
-                            interest of
-                            lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-                    </div>
-
-                </section>
-            </div>
-
-            <div class="col-8 col-lg-8 col-md-12">
-                <section class="shadow mb-5 bg-white">
-                    <img src="https://www.w3schools.com/w3images/bridge.jpg" width="100%" alt="demo">
-                    <div class="p-3">
-                        <h1>BLOG ENTRY</h1>
-                        <P>Title description, <span style="opacity: 0.60;">April 2, 2014</span></p>
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis
-                            nunc
-                            id
-                            lorem
-                            euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
-                            Phasellus
-                            sed
-                            ultricies mi non congue ullam corper. Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                            congue
-                            gravida diam
-                            non fringilla.</p>
-                        <button type="button" class="btn btn-outline-secondary p-2"><strong>READ MORE
-                                >></strong></button>
-                        <span style="float: right; padding: 12px 24px;"><strong>Comments</strong>
-                            <span class="bg-black text-white p-2">2</span></span>
-
-                    </div>
-                </section>
-            </div>
-
-
-            <div class="col-4 col-lg-4 col-md-12">
-                <section class="shadow mb-5">
-                    <div class=" bg-body-secondary p-2">
-                        <h4>Popular Posts</h4>
-                    </div>
-
-                    <ul class="px-0">
-                        <li class="bg-white d-flex p-3 border-bottom">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" width="50px" alt="demo">
-                            <div class="mx-2"><span>Lorem</span><br>
-                                <span>Sed mattis nuric</span>
+            <div class="col-lg-4 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <section class="shadow mb-5 bg-white">
+                            <img src="https://www.w3schools.com/w3images/avatar_g.jpg" width="100%" alt="demo">
+                            <div class="bg-white p-2">
+                                <h2>My Name</h2>
+                                <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love
+                                    and a
+                                    interest of
+                                    lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
                             </div>
-                        </li>
-                        <li class="bg-white d-flex p-3 border-bottom">
-                            <img src="https://www.w3schools.com/w3images/gondol.jpg" width="50px" alt="demo">
-                            <div class="mx-2"><span>Ipsum</span><br>
-                                <span>Praes tinci sed</span>
-                            </div>
-                        </li>
-                        <li class="bg-white d-flex p-3 border-bottom">
-                            <img src="https://www.w3schools.com/w3images/skies.jpg" width="50px" alt="demo">
-                            <div class="mx-2"><span>Dorum</span><br>
-                                <span>ULtricies congue</span>
-                            </div>
-                        </li>
-                        <li class="bg-white d-flex p-3 border-bottom">
-                            <img src="https://www.w3schools.com/w3images/rock.jpg" width="50px" alt="demo">
-                            <div class="mx-2"><span>Mingsum</span><br>
-                                <span>Lorem ipsum dipsum</span>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="shadow mb-5 p-2">
-                    <div class=" bg-body-secondary p-2">
-                        <h4>Tags</h4>
+
+                        </section>
                     </div>
-                    <div class="d-flex flex-wrap bg-white">
-                        <p class="bg-black text-white text-center p-1 m-2">Travel</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">New York</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">London</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">IKEA</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">NORWAY</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">DIY</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Ideas</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Baby</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Family</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">News</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Clothing</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Shopping</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Sports</p>
-                        <p class="bg-body-tertiary text-center p-1 m-2">Games</p>
+
+
+
+
+                    <div class="col-12 col-md-12">
+                        <section class="shadow mb-5">
+                            <div class=" bg-body-secondary p-2">
+                                <h4>Popular Posts</h4>
+                            </div>
+
+                            <ul class="px-0">
+                                <li class="bg-white d-flex p-3 border-bottom">
+                                    <img src="https://www.w3schools.com/w3images/workshop.jpg" width="50px" alt="demo">
+                                    <div class="mx-2"><span>Lorem</span><br>
+                                        <span>Sed mattis nuric</span>
+                                    </div>
+                                </li>
+                                <li class="bg-white d-flex p-3 border-bottom">
+                                    <img src="https://www.w3schools.com/w3images/gondol.jpg" width="50px" alt="demo">
+                                    <div class="mx-2"><span>Ipsum</span><br>
+                                        <span>Praes tinci sed</span>
+                                    </div>
+                                </li>
+                                <li class="bg-white d-flex p-3 border-bottom">
+                                    <img src="https://www.w3schools.com/w3images/skies.jpg" width="50px" alt="demo">
+                                    <div class="mx-2"><span>Dorum</span><br>
+                                        <span>ULtricies congue</span>
+                                    </div>
+                                </li>
+                                <li class="bg-white d-flex p-3 border-bottom">
+                                    <img src="https://www.w3schools.com/w3images/rock.jpg" width="50px" alt="demo">
+                                    <div class="mx-2"><span>Mingsum</span><br>
+                                        <span>Lorem ipsum dipsum</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="shadow mb-5 p-2">
+                            <div class=" bg-body-secondary p-2">
+                                <h4>Tags</h4>
+                            </div>
+                            <div class="d-flex flex-wrap bg-white">
+                                <p class="bg-black text-white text-center p-1 m-2">Travel</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">New York</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">London</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">IKEA</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">NORWAY</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">DIY</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Ideas</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Baby</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Family</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">News</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Clothing</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Shopping</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Sports</p>
+                                <p class="bg-body-tertiary text-center p-1 m-2">Games</p>
+                            </div>
+                        </section>
                     </div>
-                </section>
+
+                </div>
             </div>
 
         </div>
     </div>
-    </div>
-    <footer class="bg-secondary p-5">
-        <button class="cursor-not-allowed bg-black text-white p-2 opacity-25">Previous</button>
+    <footer style="padding-top: 32px;padding-bottom: 32px; margin: top 16px; background-color: #616161;">
+        <button class="cursor-not-allowed bg-black text-white p-2 mx-2 opacity-25">Previous</button>
         <button class="bg-black text-white p-2">Next>></button>
-        <p class="my-3 p-3 text-white ">Powered by <a href="https://cis.edu.vn/en">christam.css</a></p>
+        <p class="mt-4 p-2 text-white ">Powered by <a href="https://cis.edu.vn/en"
+                class="no-decoration">christam.css</a></p>
     </footer>
 </body>
 
