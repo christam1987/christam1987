@@ -14,28 +14,28 @@
     <style>
         .top {
             position: sticky;
+            top: 0;
             background-color: black;
             color: white;
-            margin: 0px;
-            padding: 4px;
+            padding: 6px;
+            padding-left: 12px;
+            text-decoration: none;
             border: none;
-            outline: none;
-
+            margin-right: 24px;
         }
 
-        @media (min-width : 576px) {
+        /* @media (min-width : 576px) {
             .box {
                 background-color: yellow;
                 width: 300px;
             }
-        }
+        } */
 
         /* col-lg-8 col-md-12 */
         .title {
             position: absolute;
             font-family: sans-serif;
-            font-weight: 400;
-            margin-top: 750px;
+            margin-top: 800px;
             text-align: center;
             color: white;
         }
@@ -43,47 +43,51 @@
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <a>HOME</a>
-            <a href="#band" class="top">BAND</a>
-            <a href="#" class="top">TOUR</a>
-            <a href="#" class="top">CONTACT</a>
-            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                MORE
-            </button>
-            <ul class="dropdown-menu dropdown-menu-light">
-                <li><a class="dropdown-item" href="#">Merchandise</a></li>
-                <li><a class="dropdown-item" href="#">Extras</a></li>
-                <li><a class="dropdown-item" href="#">Media</a></li>
-            </ul>
-            <div class="float-end"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
-        </div>
 
+    <div class="top">
+        <a href="#HOME" class="top">HOME</a>
+        <a href="#BAND" class="top">BAND</a>
+        <a href="#TOUR" class="top">TOUR</a>
+        <a href="#CONTACT" class="top">CONTACT</a>
+        <button class="top btn-transparent dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+            MORE
+        </button>
+        <ul class="dropdown-menu dropdown-menu-light">
+            <li><a class="dropdown-item" href="#">Merchandise</a></li>
+            <li><a class="dropdown-item" href="#">Extras</a></li>
+            <li><a class="dropdown-item" href="#">Media</a></li>
+        </ul>
+        <div class="float-end"><i class="fa fa-search fa-1x" aria-hidden="true"></i></div>
+    </div>
+
+    <section id="HOME">
         <div class="row">
-            <img src="https://www.w3schools.com/w3images/la.jpg" width="100%" height="auto" alt="Los Angeles">
+            <img src="https://www.w3schools.com/w3images/la.jpg" width="100%" alt="Los Angeles">
             <div class="title">
                 <h3>Los Angeles</h3>
-                <b>We had the best time playing at Venice Beach!</b>
+                <b>We had the best time playing at Venice Beach !</b>
             </div>
         </div>
+    </section>
 
-    </header>
-
-    <section>
-
-        <div class="row d-flex justify-content-center m-5">
+    <section id="BAND">
+        <div class="row d-flex justify-content-center p-5 m-5">
             <h2 class="text-center">THE BAND</h2>
-        <div class=" text-center opacity-50 p-2">We love music</div>
-        <p class="d-flex">We have created a fictional band website. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        
+            <div class="text-center opacity-50 p-2">We love music</div>
+            <p style="text-align: justify;" class="w-50">
+                We have created a fictional band website. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia
+                deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
             <div class="d-flex justify-content-center">
                 <div>
                     <p class="text-center">Name</p>
@@ -102,19 +106,105 @@
                 </div>
             </div>
         </div>
-        <div class="text-center bg-black text-white p-5 m-5">
-            <h4>TOUR DATES</h4>
-            <i class="opacity-50">Remember to book your tickets!</i>
-            <div class="bg-white border-bottom">
-                <p class="text-black">September<span class="bg-danger text-white m-1">Sold out</span></p>
-                <p class="text-black">September<span class="bg-danger text-white m-1">Sold out</span></p>
-                <p class="text-black">September<span class="bg-danger text-white m-1">Sold out</span></p>
-            </div>
+    </section>
 
+    <section id="TOUR">
+        <div class="bg-black text-white d-flex justify-content-center flex-column align-items-center p-5">
+            <h4 class="p-3">TOUR DATES</h4>
+            <i class="opacity-50 mb-3">Remember to book your tickets !</i>
+            <div class="bg-white w-50 m-3">
+                <p class="text-black p-1 m-2 border-bottom">September<span class="bg-danger text-white m-3 p-1">Sold
+                        out</span></p>
+                <p class="text-black p-1 m-2 border-bottom">October<span class="bg-danger text-white m-3 p-1">Sold
+                        out</span></p>
+                <p class="text-black p-1 m-2">November<span class="rounded-circle text-white float-end text-center"
+                        style="width: 3%; background-color: black; margin-right: 10px;">3</span></p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center pt-3 w-50">
+                <div class="bg-white w-25">
+                    <img class="w-100" src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York">
+                    <div class=" text-black mt-0 p-2 w-100">
+                        <h5>New York</h5>
+                        <p class="opacity-50">Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                        <p class="text-white text-center bg-black w-50 p-2">Buy Tickets</p>
+                    </div>
+                </div>
+
+                <div class="bg-white w-25 m-3">
+                    <img class="w-100" src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris">
+                    <div class=" text-black mt-0 p-2 w-100">
+                        <h5>Paris</h5>
+                        <p class="opacity-50">Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                        <p class="text-white text-center bg-black w-50 p-2">Buy Tickets</p>
+                    </div>
+                </div>
+                <div class="bg-white w-25">
+                    <img class="w-100" src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco">
+                    <div class=" text-black mt-0 p-2 w-100">
+                        <h5>San Francisco</h5>
+                        <p class="opacity-50">Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                        <p class="text-white text-center bg-black w-50 p-2">Buy Tickets</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
-    <p>September<span class="bg-red m-2 ">Sold out</span></p>
+
+    <section id="CONTACT">
+        <div class="text-center p-5">
+            <h3 class="mb-4">CONTACT</h3>
+            <i class="opacity-50">Fan? Drop a note!</i>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <div class="d-flex flex-column  mx-3 my-3">
+                <i class="fa fa-map-marker" aria-hidden="true"><span class="mx-3">Chicago, US</span></i>
+                <i class="fa fa-phone" aria-hidden="true"><span class="mx-3">Phone: +00 151515</span></i>
+                <i class="fa fa-envelope" aria-hidden="true"><span class="mx-3">Email: mail@mail.com</span></i>
+            </div>
+
+
+            <div class="d-flex flex-column">
+                <div>
+                    <input class="m-2 p-2" type="text" placeholder="Name">
+                    <input class="m-2 p-2" type="text" placeholder="Email">
+                </div>
+                <input class="w-100 m-2 p-2" type="text" placeholder="Message">
+                <button class="bg-black text-white p-2 mt-3 float-end w-25" type="submit">SEND</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="p-5">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="Location" width="100%" height="100%">
+        <div class="p-5 text-center">
+            <i class="fa fa-facebook-official fa-2x"></i>
+            <i class="fa fa-facebook-official fa-2x opacity-25"></i>
+            <i class="fa fa-facebook-official fa-2x opacity-75"></i>
+            <i class="fa fa-facebook-official fa-2x opacity-50"></i>
+            <i class="fa fa-facebook-official fa-2x opacity-100"></i>
+            <i class="fa fa-facebook-official fa-2x opacity-100"></i>
+            <p class="opacity-50 mt-3"> Powerd by <a href="https://cis.edu.vn/en" class="text-black">christam.css</a>
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
 
 
 
